@@ -1,3 +1,6 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 When you initialize a repository, you add a .git folder which contains metadata keeping track of commits.  It needs to be done because every folder is not a git repository by default.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area has only some of the files from the working directory; it affects what will be commited.  I'm still unsure if a commit consists entirely of what is in the staging area, or if it works on the whole working directory.  
