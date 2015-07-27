@@ -1,0 +1,48 @@
+To compare two files, you can use the 'diff' keyword with a MAC; any changes between the two files will be highlighted, with new additions with a '+' sign and lines which are no longer fully there as '-'
+
+It's use is like this:
+
+diff -u new_file_name old_file_name
+
+This would be an example:
+
+MacBook-Air:reflections lukerucks$ diff -u game_new.js game_old.js
+
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It makes it really easy to locate differences between files, which means that you only need to check lines that differ from their previous version to find an added bug.  
+
+
+git diff can compare two different git commits
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros:
+Logical Commits
+Easier to deal with manual saving if necessary; good habits
+Far less memory used / wasted
+Easier to go back to previous versions
+Program most likely runs faster
+
+
+Cons:
+Could forget to commit
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+They have very different use cases; Google Docs is editable by multiple people simultaneously in real time, free, and, most importantly, frequently used by non-tech people.  That means user error will be a large problem, so saving automatically at set periods or markers is a good solution.  Git deals with experienced programmers, and changes are not in real time, so manual saves are preferable.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+'git log' allows you to view all of the commits made in a given repository.  It shows you both a comment of what was done (manually entered at the time of the commit) and the commit id for every commit.  Since it gives you commits in reverse chronological order, it is easy to find a commit and the one preceding it, allowing you to use 'git diff' in order to track the exact changes made.
+
+git checkout {{ID}}: allows you to revert code to a previous version.
+
+How might using version control make you more confident to make changes that could break something?
+
+Since it is much easier to revert to an unbroken version and / or find the bug with version control, you are free to take more risks, as the consequences are less harsh.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+I want to use Git effectively with submitting Udacity projects; I also want to use it as my default way of saving files and working on projects.
