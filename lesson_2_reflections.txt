@@ -9,3 +9,24 @@ The staging area has only some of the files from the working directory; it affec
 How can you use the staging area to make sure you have one commit per logical change?
 
 The staging area allow you to commit changes to the exact files needed to make one logical change.  It's manual nature reinforces your decision to commit, along with what to commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches would be extremely helpful for any large refactoring of code, adding experimental features, or any case where there is a design decision being changed, instead of a technical one.
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams help specify exactly how branches relate to each other and also which commits are reachable by other commits.  
+
+What is the result of merging two branches together?  Why do we represent it in the diagram the way we do?
+
+Merging two branches together takes all of the changes the either of them makes to the original branch point and merges them together into one file.  I believe it merges one branch into another.  It is represented the way it is in the diagram because the merge point points to both branches as parents.  
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+The pros:
+faster
+brings up conflicts anyway
+
+The cons:
+Could end up with more code than desired (i.e. two new functions that do the same thing) if the collaborators aren't doing much collaborating.
