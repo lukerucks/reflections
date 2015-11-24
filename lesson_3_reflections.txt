@@ -20,3 +20,6 @@ It allows conflicts to be merged from either Github -> local or local -> Github.
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
 Google docs or email would probably be the two things that come to mind.  For google docs, live updates would be easier, and for email, you need less of a knowledge base to use it. However, for google docs, you wouldn't be able to work offline, and you may not be able to use the desired file types (and editors); for email, you would need to keep track of who did what manually, which would be significantly more work.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+Any form of collaboration which someone else should have some say in before commiting to master should probably start with a seperate branch.  This would also be necessary for any experimental features which may or may not make it to published product.  The main advantage of branches is that they allow step backs if the aren't put in, and they allow collaborers to actually collaborate before adding to master.  The main disadvantage is time; if there is only one person working on a non-optional part of the project, and it isn't being published yet anyway, you might as well stay on master to save time.
