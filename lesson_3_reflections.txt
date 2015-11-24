@@ -12,3 +12,7 @@ A fork will make a copy of another user's repository on github and will create a
 A clone will take a repository on either github or your local machine, and it will make a copy of that repository on your local machine.  
 
 A branch makes a copy of the files of a repository, but it is still *in* the same repository.  
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+It allows conflicts to be merged from either Github -> local or local -> Github.  Instead of overwriting whatever was done from the last push / pull, the conflicts are merged instead.  This is extremely helpful for collaboration.
