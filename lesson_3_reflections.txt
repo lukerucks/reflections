@@ -16,3 +16,7 @@ A branch makes a copy of the files of a repository, but it is still *in* the sam
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 It allows conflicts to be merged from either Github -> local or local -> Github.  Instead of overwriting whatever was done from the last push / pull, the conflicts are merged instead.  This is extremely helpful for collaboration.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Google docs or email would probably be the two things that come to mind.  For google docs, live updates would be easier, and for email, you need less of a knowledge base to use it. However, for google docs, you wouldn't be able to work offline, and you may not be able to use the desired file types (and editors); for email, you would need to keep track of who did what manually, which would be significantly more work.
